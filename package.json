@@ -19,6 +19,7 @@
   "homepage": "https://github.com/yuejiahz/blog-list#readme",
   "dependencies": {
     "cors": "^2.8.5",
+    "dot-env": "^0.0.1",
     "express": "^4.18.2",
     "http": "^0.0.1-security",
     "mongoose": "^6.6.5",
