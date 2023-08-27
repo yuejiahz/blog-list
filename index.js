@@ -14,7 +14,7 @@ const blogSchema = mongoose.Schema({
 
 const Blog = mongoose.model("Blog", blogSchema);
 
-const mongoUrl = "";
+const mongoUrl = process.env.MONGODB_URI;
 mongoose.connect(mongoUrl);
 
 app.use(cors());
@@ -33,7 +33,6 @@ app.post("/api/blogs", (request, response) => {
   });
 });
 
-console.log(process.env.PORT);
 const PORT = process.env.PORT;
 
 app.listen(PORT, () => {
